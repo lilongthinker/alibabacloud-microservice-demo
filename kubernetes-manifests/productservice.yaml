@@ -11,7 +11,12 @@ spec:
     metadata:
       labels:
         app: productservice
-        version: 1.0.0-SNAPSHOT
+      annotations:
+        ahasPilotAutoEnable: "on"
+        ahasAppName: "java-demo-product"
+        ahasNamespace: "default"
+        armsPilotAutoEnable: "on"
+        armsPilotCreateAppName: "java-demo-product"
     spec:
       containers:
         - name: productservice

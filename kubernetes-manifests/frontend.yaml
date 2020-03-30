@@ -11,6 +11,12 @@ spec:
     metadata:
       labels:
         app: frontend
+      annotations:
+        ahasPilotAutoEnable: "on"
+        ahasAppName: "java-demo-frontend"
+        ahasNamespace: "default"
+        armsPilotAutoEnable: "on"
+        armsPilotCreateAppName: "java-demo-frontend"
     spec:
       containers:
         - name: frontend
