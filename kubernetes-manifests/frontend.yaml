@@ -3,6 +3,8 @@ kind: Deployment
 metadata:
   name: frontend
   namespace: java-demo
+  labels:
+    app: frontend
 spec:
   selector:
     matchLabels:
